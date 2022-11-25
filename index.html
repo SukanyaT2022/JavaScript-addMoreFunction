@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+
+
+
+
+    <script>
+/*
+ Function that returns a string representing a cup of green tea
+const prepareTea = () => 'greenTea';
+
+
+Given a function (representing the tea type) and number of cups needed, the
+following function returns an array of strings (each representing a cup of
+a specific type of tea).
+
+const getTea = (numOfCups) => {
+  const teaCups = [];
+
+  for(let cups = 1; cups <= numOfCups; cups += 1) {
+    const teaCup = prepareTea();
+    teaCups.push(teaCup);
+  }
+  return teaCups;
+};
+
+
+const tea4TeamFCC = null;
+
+*/
+
+
+
+// simple form
+        //repaet word green tea 40 times
+        //function call function
+
+function prepareGreenTea(){
+    return "green tea"
+
+}
+function prepareBlackTea(){
+    return "black tea"
+
+}
+
+
+function getTea(numOfCups,type) {
+  const teaCups = [];//create black array call tesCups
+//below is loop count from 1 until number of cup
+  for(let cups = 1; cups <= numOfCups; cups += 1) {
+    if (type=="green"){
+        var teaCup = prepareGreenTea()
+    }
+    else{
+        var teaCup = prepareBlackTea()
+    }
+  
+    teaCups.push(teaCup);// push value of teaCups to array
+  }
+  return teaCups;
+};
+
+const tea4TeamFCC = getTea(40,"green");//call function get green tea function
+
+document.write(tea4TeamFCC)
+const tea4TeamFCC2 = getTea(40,"black");//call function get green tea function
+
+document.write(tea4TeamFCC2)
+
+    </script>
+</body>
+</html>
